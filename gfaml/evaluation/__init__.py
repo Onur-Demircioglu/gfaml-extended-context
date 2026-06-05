@@ -1,0 +1,4 @@
+# gfaml/evaluation/__init__.py
+from gfaml.evaluation.metrics import calculate_representation_drift, calculate_temporal_consistency, simulate_gradient_interference
+from gfaml.evaluation.forgetting import calculate_forgetting_rate
+from gfaml.evaluation.drift import calculate_representation_drift as calculate_drift

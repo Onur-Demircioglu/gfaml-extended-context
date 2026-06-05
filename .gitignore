@@ -1,0 +1,7 @@
+__pycache__/
+outputs/
+*.pt
+*.log
+.gemini/
+.venv/
+.git/

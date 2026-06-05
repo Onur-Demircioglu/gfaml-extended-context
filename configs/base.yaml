@@ -1,0 +1,29 @@
+# configs/base.yaml
+model:
+  d_model: 128
+  n_layer: 1
+  n_head: 4
+  vocab_size: 150
+
+gfaml:
+  rank: 32
+  surprise_threshold: 0.35
+  lambda_decay: 1.0
+  eta: 1.0
+  alpha: 1.0
+  saturation_threshold: 5.0
+  use_hard_clamp: false
+  use_gating: true
+  gate_bias: 4.0
+  perfect_gating: false
+  use_unit_normalization: false
+  use_soft_stabilization: true
+  normalization_threshold: 1e-6
+
+training:
+  lr: 0.06
+  epochs: 200
+
+sleep:
+  epochs: 200
+  noise_sigma: 0.05

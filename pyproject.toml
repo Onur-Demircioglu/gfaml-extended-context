@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gfaml"
+version = "0.1.0"
+description = "Gradient-Free Associative Memory Layers"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.22.0",
+    "pyyaml>=6.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gfaml*"]

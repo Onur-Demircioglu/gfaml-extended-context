@@ -1,0 +1,22 @@
+# configs/default_config.yaml
+model:
+  vocab_size: 150
+  d_model: 128
+  rank: 32
+
+memory:
+  lambda_decay: 1.0
+  eta: 1.0
+  alpha: 1.0
+  saturation_threshold: 5.0
+  use_hard_clamp: false
+  use_gating: true
+  gate_bias: 4.0
+  perfect_gating: false
+  use_unit_normalization: false
+  use_soft_stabilization: true
+  normalization_threshold: 1e-6
+
+evaluation:
+  noise_sigma: 0.05
+  epochs_consolidation: 200
